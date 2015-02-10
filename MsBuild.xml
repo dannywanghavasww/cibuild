@@ -95,13 +95,7 @@
 			BindingProtocol="http"
 		/>
 
-		<!-- Create https Binding -->
-		<MSBuild.ExtensionPack.Web.Iis7Binding
-			TaskAction="Add"
-			Name="$(WebSiteName)"
-			BindingInformation=":443:$(WebSiteUrl)"
-			BindingProtocol="https"
-		/>
+	
       
 		
 
