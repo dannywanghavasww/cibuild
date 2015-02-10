@@ -57,7 +57,7 @@
 			Name="$(WebSiteName)" 
 			AppPool="$(AppPoolName)"
 			Path="$(FullDeployFolderPath)" 
-			Port="80" 
+			Port="88" 
 			ServerAutoStart="true" 
 		>
 			<Output TaskParameter="SiteId" PropertyName="WebSiteId"/>    
@@ -91,7 +91,7 @@
 		<MSBuild.ExtensionPack.Web.Iis7Binding
 			TaskAction="Add"
 			Name="$(WebSiteName)"
-			BindingInformation=":80:$(WebSiteUrl)"
+			BindingInformation=":88:$(WebSiteUrl)"
 			BindingProtocol="http"
 		/>
 
